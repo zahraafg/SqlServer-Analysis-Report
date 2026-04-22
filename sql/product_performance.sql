@@ -1,3 +1,7 @@
+USE POSFAPCENTERPLUS;
+
+/* Satışlar niyə azalıb? */
+
 /* Məhsul üzrə satış
 → Hansı məhsulların satışı azalıb? */
 WITH CTE AS(
