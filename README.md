@@ -43,6 +43,9 @@ The project is based on the **POSFAPCENTERPLUS ERP database**, which includes:
 - 📉 [Sales Trend Analysis](./sql/sales_trend_analysis.sql)
 - 📦 [Product Performance](./sql/product_performance.sql)
 - 👨‍💼 [User Performance](./sql/cashier_performance.sql)
+- 🧑‍💼📅 [Daily Top Cashier Analysis](./sql/daily_top_cashier_analysis.sql)
+- 👥💰 [Customer Sales Performance](./sql/customer_sales_performance.sql)
+- 🏷️📊 [User & Product Group Performance](./sql/user_group_sales_performance.sql)
 
 ---
 
