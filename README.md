@@ -47,7 +47,7 @@ The project is based on the **POSFAPCENTERPLUS ERP database**, which includes:
 - 👥💰 [Customer Sales Performance](./sql/customer_sales_performance.sql)
 - 🏷️📊 [User & Product Group Performance](./sql/user_group_sales_performance.sql)
 - 📊 [Daily Invoice Analysis](./sql/daily_invoice_analysis.sql)
-- 💳 [POS Bank Transaction Report](./sql/pos_bank_transaction_report.sql)
+- 💳 [POS Bank Transaction Report](./sql/Detailed_POS_Bank_Transaction_Report.sql)
 
 ---
 
