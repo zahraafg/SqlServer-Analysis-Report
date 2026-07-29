@@ -1,0 +1,80 @@
+USE [POSFAPCENTER]
+GO
+
+/****** Object:  Table [dbo].[OPR_DISCTITLES]    Script Date: 7/29/2026 12:04:41 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[OPR_DISCTITLES](
+	[DST_ID] [int] IDENTITY(1,1) NOT NULL,
+	[DST_DSDID] [int] NOT NULL,
+	[DST_CODE] [varchar](50) NULL,
+	[DST_NAME] [nvarchar](250) NULL,
+	[DST_DATE] [datetime] NOT NULL,
+	[DST_BEGDATE] [datetime] NOT NULL,
+	[DST_ENDDATE] [datetime] NOT NULL,
+	[DST_SGRID] [int] NULL,
+	[DST_TOTAL] [decimal](18, 2) NULL,
+	[DST_PERCENT] [decimal](18, 2) NULL,
+	[DST_TOTALSTEP] [int] NULL,
+	[DST_LIMIT] [decimal](18, 2) NULL,
+	[DST_SORTCOUNT] [int] NULL,
+	[DST_SORTAMOUNT] [decimal](18, 2) NULL,
+	[DST_SALESIN] [int] NULL,
+	[DST_CONDITIONAO] [int] NULL,
+	[DST_GIVINGAO] [int] NULL,
+	[DST_CRUSER] [int] NULL,
+	[DST_CRDATE] [datetime] NULL,
+	[DST_MDUSER] [int] NULL,
+	[DST_MDDATE] [datetime] NULL,
+	[DST_STATUS] [int] NULL,
+	[DST_ISSEND] [int] NULL,
+	[DST_SENDDATE] [datetime] NULL,
+	[DST_DISCCOUNT] [float] NULL,
+	[DST_CHECKTIME] [int] NULL,
+	[DST_BEGTIME] [time](7) NULL,
+	[DST_ENDTIME] [time](7) NULL,
+	[DST_USERROLE] [int] NULL,
+	[DSTITEM] [varchar](50) NULL,
+	[DST_BONUCE] [smallint] NULL,
+	[DST_ORDER] [smallint] NULL,
+ CONSTRAINT [PK_OPR_DISCTITLES] PRIMARY KEY CLUSTERED 
+(
+	[DST_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Mərkəz unikal İD' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'OPR_DISCTITLES', @level2type=N'COLUMN',@level2name=N'DST_ID'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'0-Bonus hesablama qaydası; 1-Alternativ qiymət tətbiqi; 2-Alış-verişdə məbləğ limitinə endirim; 3-Kassa çeklərinin ödəmədə istifadəsi; 4-Çarpaz mal endirimləri; 5-Kupon istifadəsi; 6-Günlük və saatlık endirim' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'OPR_DISCTITLES', @level2type=N'COLUMN',@level2name=N'DST_DSDID'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Kompaniyanin yaradilma tarixi' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'OPR_DISCTITLES', @level2type=N'COLUMN',@level2name=N'DST_DATE'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Kompaniyanin baslama vaxti' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'OPR_DISCTITLES', @level2type=N'COLUMN',@level2name=N'DST_BEGDATE'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Kompaniyanin bitme vaxti' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'OPR_DISCTITLES', @level2type=N'COLUMN',@level2name=N'DST_ENDDATE'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Mağaza qrupları' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'OPR_DISCTITLES', @level2type=N'COLUMN',@level2name=N'DST_SGRID'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Heç olmasa biri
+Bütün məhsullar
+İxtiyari çeşid sayı
+Fərqli çeşid sayı' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'OPR_DISCTITLES', @level2type=N'COLUMN',@level2name=N'DST_CONDITIONAO'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Heç olmasa biri
+Bütün məhsullar
+Mərhələli endirim' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'OPR_DISCTITLES', @level2type=N'COLUMN',@level2name=N'DST_GIVINGAO'
+GO
+
+
