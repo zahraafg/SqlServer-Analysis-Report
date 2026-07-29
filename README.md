@@ -33,24 +33,34 @@ The projects cover:
 
 ## 🗃️ Database Structure
 
-The project is based on the **POSFAPCENTER POS database**, which includes:
+The project is based on the **POSFAPCENTER** ERP/POS database and includes reporting solutions built using the following core tables:
 
-- `CRD_CLIENTS` – customer information  
-- `CRD_ITEMS` – product information  
-- `CRD_PRICES` – product pricing  
-- `CRD_ITEMBARCODES` – product barcodes  
-- `CRD_ITEMGROUPS` – product categories  
+### Master Data
 
-- `CRD_BANKCURRENCY` – bank currency information  
-- `CRD_BANKTERMINAL` – POS terminals  
-- `CRD_CASHBOX` – cash register information  
-- `CRD_ACCOUNTS` – chart of accounts  
+* `CRD_CLIENTS` – Customer information
+* `CRD_ITEMS` – Product information
+* `CRD_PRICES` – Product pricing
+* `CRD_ITEMBARCODES` – Product barcodes
+* `CRD_ITEMGROUPS` – Product categories
+* `CRD_STORAGES` – Store and warehouse information
+* `CRD_BANKCURRENCY` – Bank and payment methods
+* `CRD_BANKTERMINAL` – POS terminals
+* `CRD_BANKUSERS` – Bank terminal users
+* `CRD_CASHBOX` – Cash register information
+* `CRD_ACCOUNTS` – Customer and account records
 
-- `OPR_INVOICE` – invoices  
-- `OPR_STLINE` – invoice line items (sales details)  
-- `OPR_ACCOUNTS` – accounting transaction mappings  
+### Transaction Data
 
-- `SYS_USERS_` – system users (cashiers / employees)
+* `OPR_INVOICE` – Sales invoices
+* `OPR_STLINE` – Invoice line items
+* `OPR_ACCOUNTS` – Financial/account transactions
+* `OPR_BANK` – Bank payment transactions
+* `OPR_DISCOUNTS` – Applied discounts
+* `OPR_DISCTITLES` – Discount definitions and campaign information
+
+### System Data
+
+* `SYS_USERS_` – Cashiers and system users
 
 ---
 
