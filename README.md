@@ -20,14 +20,14 @@ Inside this repository you will find 30+ production-style T-SQL reports develope
 
 The projects cover:
 
-📈 Sales Analysis
-💰 Payment & Bank Reconciliation
-🛒 Product Performance
-👤 Customer Analytics
-💳 Cashier Performance
-🎯 Discount & Campaign Analysis
-🏪 Branch Performance Reporting
-📦 Inventory & Product Reports
+- 📈 Sales Analysis
+- 💰 Payment & Bank Reconciliation
+- 🛒 Product Performance
+- 👤 Customer Analytics
+- 💳 Cashier Performance
+- 🎯 Discount & Campaign Analysis
+- 🏪 Branch Performance Reporting
+- 📦 Inventory & Product Reports
 
 ---
 
@@ -78,13 +78,13 @@ The project is based on the **POSFAPCENTER POS database**, which includes:
 ---
 
 ## 📂 Repository Structure
-📂 Sales Reports/
-📂 Cashier Reports/
-📂 Customer Reports/
-📂 Payment Reports/
-📂 Discount Reports/
-📂 Inventory Reports/
-README.md
+- 📂 Sales Reports/
+- 📂 Cashier Reports/
+- 📂 Customer Reports/
+- 📂 Payment Reports/
+- 📂 Discount Reports/
+- 📂 Inventory Reports/
+- README.md
 
 ---
 
