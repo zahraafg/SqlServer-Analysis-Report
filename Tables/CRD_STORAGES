@@ -1,0 +1,112 @@
+USE [POSFAPCENTER]
+GO
+
+/****** Object:  Table [dbo].[CRD_STORAGES]    Script Date: 7/29/2026 11:54:12 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[CRD_STORAGES](
+	[STG_ID] [int] IDENTITY(1,1) NOT NULL,
+	[STG_SGR_ID] [int] NULL,
+	[STG_RGNID1] [int] NULL,
+	[STG_RGNID2] [int] NULL,
+	[STG_RGNID3] [int] NULL,
+	[STG_RGNID] [int] NULL,
+	[STG_CODE] [varchar](50) NULL,
+	[STG_OBJCODE] [varchar](50) NULL,
+	[STG_NAME] [nvarchar](250) NULL,
+	[STG_CITYNAME] [nvarchar](50) NULL,
+	[STG_ADDRESS] [nvarchar](250) NULL,
+	[STG_PHONE] [varchar](50) NULL,
+	[STG_TAXCODE] [nvarchar](50) NULL,
+	[STG_BANKACCOUNT] [nvarchar](50) NULL,
+	[STG_ERPCODE] [varchar](50) NULL,
+	[STG_PRINTINFO] [text] NULL,
+	[STG_SERVER] [varchar](50) NULL,
+	[STG_DATABASE] [varchar](50) NULL,
+	[STG_USER] [varchar](50) NULL,
+	[STG_PASSWORD] [varchar](50) NULL,
+	[STG_TIMER] [int] NULL,
+	[STG_CRUSER] [int] NULL,
+	[STG_CRDATE] [datetime] NULL,
+	[STG_MDUSER] [int] NULL,
+	[STG_MDDATE] [datetime] NULL,
+	[STG_STATUS] [int] NULL,
+	[STG_LOGSEND] [int] NULL,
+	[STG_TIMERCASH] [int] NULL,
+	[STG_WEBKEY] [varchar](50) NULL,
+	[STG_CASHWAIT] [int] NULL,
+	[STG_LOYALITYTYPE] [int] NULL,
+	[STG_IMPORTROWS] [int] NULL,
+	[STG_MLATITUDE] [varchar](50) NULL,
+	[STG_MLONGITUDE] [varchar](50) NULL,
+	[STG_MAXPAYCASH] [float] NULL,
+	[STG_LOGOINTEGAUTO] [int] NULL,
+	[STG_INTEGLINESCOUNT] [int] NULL,
+	[STG_CASHDIVIDE] [int] NULL,
+	[STG_CLIENTLOCAL] [int] NULL,
+	[STG_CLIENTUMICO] [int] NULL,
+	[STG_POSEXTID] [varchar](50) NULL,
+	[STG_STORETYPE] [int] NULL,
+	[STG_STOREURL] [varchar](250) NULL,
+	[STG_STOREUSER] [varchar](250) NULL,
+	[STG_STOREPASS] [varchar](250) NULL,
+	[STG_SCALEPRICESEND] [int] NULL,
+	[STG_STORECASHCANCEL] [int] NULL,
+	[STG_M10BANKID] [int] NULL,
+	[STG_CHECKPRICETOP] [int] NULL,
+	[STG_DAYLYCLOSEJOBID] [int] NULL,
+	[STG_DAYLYCLOSEDATE] [datetime] NULL,
+	[STG_DAYLYCLOSEBEG] [datetime] NULL,
+	[STG_DAYLYCLOSEEND] [datetime] NULL,
+	[STG_DAYLYCLOSESTATUS] [int] NULL,
+	[STG_SALERSOURCE] [smallint] NULL,
+	[STG_CLIENTSOURCE] [smallint] NULL,
+	[STG_RETURNDAY] [int] NULL,
+	[STG_ECOMKEY] [nvarchar](100) NULL,
+	[STG_ECOMSHOP] [nvarchar](100) NULL,
+	[STG_ECOMTERMINAL] [nvarchar](100) NULL,
+	[STG_LEOBANKID] [int] NULL,
+	[STG_ECOMSTATUS] [int] NULL,
+	[STG_SEYFDEPOSIT] [decimal](18, 2) NULL,
+ CONSTRAINT [PK_CRD_OBJECTS] PRIMARY KEY CLUSTERED 
+(
+	[STG_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Mərkəzdən gətiriləcək' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'CRD_STORAGES', @level2type=N'COLUMN',@level2name=N'STG_ID'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Market qruplarının təyin edilməsi' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'CRD_STORAGES', @level2type=N'COLUMN',@level2name=N'STG_SGR_ID'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Marketin özəl kodu və ya VÖEN kodu' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'CRD_STORAGES', @level2type=N'COLUMN',@level2name=N'STG_CODE'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'İzahlı adı' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'CRD_STORAGES', @level2type=N'COLUMN',@level2name=N'STG_NAME'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Yerləşdiyi şəhər' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'CRD_STORAGES', @level2type=N'COLUMN',@level2name=N'STG_CITYNAME'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Küçə və ünvan göstərilməklə ünvan' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'CRD_STORAGES', @level2type=N'COLUMN',@level2name=N'STG_ADDRESS'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'VÖEN kodu' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'CRD_STORAGES', @level2type=N'COLUMN',@level2name=N'STG_TAXCODE'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Bank hesabı' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'CRD_STORAGES', @level2type=N'COLUMN',@level2name=N'STG_BANKACCOUNT'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'SAP və digər ERP-lərdə olan kod' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'CRD_STORAGES', @level2type=N'COLUMN',@level2name=N'STG_ERPCODE'
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Çap ediləcək çekin üzərindəki yazı' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'CRD_STORAGES', @level2type=N'COLUMN',@level2name=N'STG_PRINTINFO'
+GO
+
+
