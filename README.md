@@ -88,6 +88,7 @@ The project is based on the **POSFAPCENTER** ERP/POS database and includes repor
 ---
 
 ## 📂 Repository Structure
+- 📂 Tables
 - 📂 Sales Reports
 - 📂 Cashier Reports
 - 📂 Customer Reports
