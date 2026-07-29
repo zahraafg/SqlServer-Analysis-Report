@@ -78,12 +78,12 @@ The project is based on the **POSFAPCENTER POS database**, which includes:
 ---
 
 ## 📂 Repository Structure
-- 📂 Sales Reports/
-- 📂 Cashier Reports/
-- 📂 Customer Reports/
-- 📂 Payment Reports/
-- 📂 Discount Reports/
-- 📂 Inventory Reports/
+- 📂 Sales Reports
+- 📂 Cashier Reports
+- 📂 Customer Reports
+- 📂 Payment Reports
+- 📂 Discount Reports
+- 📂 Inventory Reports
 - README.md
 
 ---
