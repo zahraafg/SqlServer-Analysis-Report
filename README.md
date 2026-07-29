@@ -6,18 +6,34 @@
 
 ---
 
-## 📊 Project Overview
+## 📊 POS SQL Reporting Portfolio
 
-This repository contains SQL queries written on a custom ERP-style database:  
-**POSFAPCENTERPLUS**
+Production-style SQL reporting projects built on real POS transactional databases.
 
-The main goal of this project is to improve **real-world SQL and business analysis skills**
+This repository demonstrates my practical SQL skills through business-oriented reporting tasks similar to those used in real companies. Every script focuses on solving reporting, analytics, reconciliation, and operational business requirements using Microsoft SQL Server.
+
+---
+
+## 🚀 About This Repository
+
+Inside this repository you will find 30+ production-style T-SQL reports developed using real POS/ERP database structures.
+
+The projects cover:
+
+📈 Sales Analysis
+💰 Payment & Bank Reconciliation
+🛒 Product Performance
+👤 Customer Analytics
+💳 Cashier Performance
+🎯 Discount & Campaign Analysis
+🏪 Branch Performance Reporting
+📦 Inventory & Product Reports
 
 ---
 
 ## 🗃️ Database Structure
 
-The project is based on the **POSFAPCENTERPLUS ERP database**, which includes:
+The project is based on the **POSFAPCENTER POS database**, which includes:
 
 - `CRD_CLIENTS` – customer information  
 - `CRD_ITEMS` – product information  
@@ -38,20 +54,72 @@ The project is based on the **POSFAPCENTERPLUS ERP database**, which includes:
 
 ---
 
-## 📌 Key Analysis Covered
-
-- 📉 [Sales Trend Analysis](./sql/sales_trend_analysis.sql)
-- 📦 [Product Performance](./sql/product_performance.sql)
-- 👨‍💼 [User Performance](./sql/cashier_performance.sql)
-- 🧑‍💼📅 [Daily Top Cashier Analysis](./sql/daily_top_cashier_analysis.sql)
-- 👥💰 [Customer Sales Performance](./sql/customer_sales_performance.sql)
-- 🏷️📊 [User & Product Group Performance](./sql/user_group_sales_performance.sql)
-- 📊 [Daily Invoice Analysis](./sql/daily_invoice_analysis.sql)
-- 💳 [POS Bank Transaction Report](./sql/Detailed_POS_Bank_Transaction_Report.sql)
+## 🛠 SQL Skills Demonstrated
+- Complex JOINs
+- Common Table Expressions (CTEs)
+- Window Functions
+- Aggregate Functions
+- CASE Expressions
+- Correlated & Nested Subqueries
+- GROUP BY & HAVING
+- Data Validation
+- Financial Reconciliation
+- Business KPI Reporting
+- Query Optimization Techniques
 
 ---
 
-## 👩‍💻 Author
+## 💻 Technologies
+- Microsoft SQL Server
+- T-SQL
+- GitHub
+- POS Database Systems
 
-Zahra 
-SQL & Backend Development Learner (Java / Spring Boot)
+---
+
+## 📂 Repository Structure
+📂 Sales Reports/
+📂 Cashier Reports/
+📂 Customer Reports/
+📂 Payment Reports/
+📂 Discount Reports/
+📂 Inventory Reports/
+README.md
+
+---
+
+## 🎯 Project Goal
+
+The purpose of this repository is to showcase practical SQL development skills through real-world business reporting scenarios.
+
+Each project is designed to simulate production reporting tasks commonly requested by ERP, Retail, POS, Finance, and Business Intelligence teams.
+
+---
+
+## 📈 Highlights
+
+✔ 30+ SQL Reporting Projects
+
+✔ Real ERP / POS Database Experience
+
+✔ Production-Style Business Reports
+
+✔ Financial & Sales Reporting
+
+✔ Data Analysis & KPI Reporting
+
+✔ Clean & Readable SQL Code
+
+✔ Business-Oriented Problem Solving
+
+---
+
+## 👨‍💻 Author
+
+Zahra Yaghoubi
+
+Junior SQL Developer
+
+Microsoft SQL Server • T-SQL • ERP • POS Reporting
+
+GitHub: https://github.com/zahraafg
