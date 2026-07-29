@@ -1,0 +1,45 @@
+USE [POSFAPCENTER]
+GO
+
+/****** Object:  Table [dbo].[OPR_DISCOUNTS]    Script Date: 7/29/2026 11:35:10 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[OPR_DISCOUNTS](
+	[DIS_ID] [int] IDENTITY(1,1) NOT NULL,
+	[DIS_DISID] [int] NULL,
+	[DIS_TYPE] [int] NULL,
+	[DIS_STGID] [int] NULL,
+	[DIS_CSCID] [int] NULL,
+	[DIS_TERMINAL] [varchar](50) NULL,
+	[DIS_DSTID] [int] NULL,
+	[DIS_DSMID] [int] NULL,
+	[DIS_DSCID] [int] NULL,
+	[DIS_FICHENO] [varchar](50) NULL,
+	[DIS_STLID] [int] NULL,
+	[DIS_ITMCODE] [varchar](50) NULL,
+	[DIS_BARCODE] [varchar](50) NULL,
+	[DIS_UNITCODE] [varchar](50) NULL,
+	[DIS_QUANTITY] [decimal](18, 3) NULL,
+	[DIS_PRICE] [decimal](18, 2) NULL,
+	[DIS_DISCPER] [decimal](18, 2) NULL,
+	[DIS_TOTAL] [decimal](18, 2) NULL,
+	[DIS_CRDATE] [datetime] NULL,
+	[DIS_STATUS] [int] NULL,
+	[DIS_ISSEND] [int] NULL,
+	[DIS_SENDDATE] [datetime] NULL,
+	[DIS_CDISID] [int] NULL,
+ CONSTRAINT [PK_OPR_DISCOUNTS] PRIMARY KEY CLUSTERED 
+(
+	[DIS_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'0-Toplama; 1-setre' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'OPR_DISCOUNTS', @level2type=N'COLUMN',@level2name=N'DIS_TYPE'
+GO
+
+
